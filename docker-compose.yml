@@ -23,6 +23,8 @@ services:
     environment:
       PMA_HOST: mysql
       PMA_PORT: 3306
+    ports:
+      - "8080:80"
   mysql:
     image: mysql
     environment:
